@@ -1,6 +1,6 @@
 FROM alpine:3.8
 WORKDIR /usr/bin
-RUN  apk add --no-cache git bash curl
+RUN  apk add --no-cache bash curl
 RUN curl -L https://github.com/txthinking/brook/releases/download/v20200909/brook_linux_amd64 -o /usr/bin/brook
 RUN chmod +x /usr/bin/brook
 RUN touch /crond.sh
